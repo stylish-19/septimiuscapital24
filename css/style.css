@@ -5,7 +5,7 @@
   Designed: Vision Tech Inc
 ******************************************************************/
 
-/*------------------------------------------------------------------
+/*-----------------------------------------------------------------
 [Table of contents]
 
 1.  Default CSS
@@ -1344,7 +1344,7 @@ Pitch end Here
 .footner{
 	position: relative;
 	color: white;
-	left: 150px;
+	left: 80px;
 }
 
 .footer__copyright__links li:after {
