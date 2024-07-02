@@ -545,148 +545,130 @@ ol {
 
 /*Additional Styling Starts here*/
 
-
-.wide{
-	position: relative;
-	max-width: 700px;
-	max-height: 1500;
-	bottom: 700px;
-	left: 600px;
-}
 .hero {
-	position: relative;
-	overflow: hidden;
-	padding: 170px 0;
-	height: 100vh; /* Ensure it covers the viewport height */
-  }
-  
-  .bg-video {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	min-width: 100%;
-	min-height: 100%;
-	width: auto;
-	height: auto;
-	z-index: -1;
-	transform: translate(-50%, -50%);
-	background: url('img/cover2.png') no-repeat;
-	background-size: cover;
-  }
-  
-  /* Ensure content in the hero section is above the video */
-  .hero .container {
-	position: relative;
-	z-index: 1;
-  }
-  
-  .hero__text {
+    position: relative;
+    overflow: hidden;
+}
+
+.slider {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+.slide {
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.slide.active {
+    display: block;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.slider-controls {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: space-between;
+    pointer-events: none;
+}
+
+.slider-controls button {
+    pointer-events: all;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: rgb(226, 156, 16);
+    padding: 10px;
+    cursor: pointer;
+}
+
+.hero .container {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 100%;
+    padding: 0 15px;
+}
+
+.hero__text {
 	padding-top: 90px;
-  }
-  
-  .hero__text h2 {
-	font-size: 50px;
-	color: #ffffff;
-	font-weight: 700;
-	line-height: 60px;
-	margin-bottom: 65px;
-  }
-  
-  .hero__text p {
-	color: #ffffff;
-	margin-bottom: 60px;
-  }
-  
-  .hero__text .primary-btn {
-	margin-right: 16px;
+    padding: 20px;
+    border-radius: 8px;
+
+}
+
+.hero__text h2 {
+    font-size: 60px;
+    color: #130fdc;
+    font-weight: 700;
+    line-height: 60px;
+    margin-bottom: 65px;
 	position: relative;
-	bottom: 30px;
+	top: 300px;
+
+  }
+
+  .hero__text p {
+	font-size: 20px;
+    color: #1114e2;
+    margin-bottom: 60px;
+	position: relative;
+	top: 300px;
+  }
+
+
+  .primary-btnr, .howit-btnr, .site-btn {
+    color: #fff;
+    background-color: blue;
+    border: none;
+    padding: 10px 20px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+	position: relative;
+	top: 300px;
   }
   
-  .hero__text .primary-btn.howit-btn {
+  .primary-btnr:hover, .howit-btnr:hover, .site-btnr:hover {
+    background-color: orange;
+    text-decoration: none;
+  }
+
+
+.primary-btnr {
+	margin-right: 16px;
+    position: relative;
+    bottom: 30px;
+
+}
+
+
+.howit-btnr {
+    margin-left: 10px;
 	background: orange;
-  }
-  
-  .hero__form {
-	background: #ffffff;
-	padding: 50px 30px 45px;
-	border-radius: 2px;
-  }
-  
-  .hero__form h3 {
-	color: #323232;
-	font-weight: 700;
-	text-align: center;
-	margin-bottom: 24px;
-  }
-  
-  .hero__form form .input-list {
-	overflow: hidden;
-	margin-right: -20px;
-  }
-  
-  .hero__form form .input-list.last .input-list-item {
-	margin-bottom: 30px;
-  }
-  
-  .hero__form form .input-list .input-list-item {
-	width: calc(50% - 20px);
-	float: left;
-	margin-right: 20px;
-	margin-bottom: 20px;
-  }
-  
-  .hero__form form .input-list .input-list-item p {
-	color: #323232;
-	margin-bottom: 12px;
-  }
-  
-  .hero__form form .input-list .input-list-item input {
-	width: 100%;
-	height: 48px;
-	border-radius: 2px;
-	border: none;
-	background: #f6f6f6;
-	padding-left: 15px;
-  }
-  
-  .hero__form form .input-full-width {
-	margin-bottom: 20px;
-  }
-  
-  .hero__form form .input-full-width p {
-	color: #323232;
-	margin-bottom: 12px;
-  }
-  
-  .hero__form form .input-full-width input {
-	width: 100%;
-	height: 48px;
-	border-radius: 2px;
-	border: none;
-	background: #f6f6f6;
-	padding-left: 15px;
-  }
-  
-  .hero__form form button {
-	width: 100%;
-  }
-  
-  /* Button styles for primary buttons */
-  .primary-btn, .howit-btn, .site-btn {
-	color: #fff;
-	background-color: blue;
-	border: none;
-	padding: 10px 20px;
-	text-decoration: none;
-	display: inline-block;
-	margin-top: 10px;
-  }
-  
-  .primary-btn:hover, .howit-btn:hover, .site-btn:hover {
-	background-color: orange;
-	text-decoration: none;
-  }
+}
+
+.wide {
+    margin-top: 20px;
+    max-width: 600px;
+    height: auto;
+	position: relative;
+	left: 950px;
+	bottom: 200px;
+}
 
 
 /*---------------------

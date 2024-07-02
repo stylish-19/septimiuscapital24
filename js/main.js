@@ -1,10 +1,9 @@
 /*  ---------------------------------------------------
-    Template Name: Loanday
-    Description:  Loanday loan HTML Template
+    Description:  Septimius Capital Website
     Author: Colorlib
     Author URI: https://colorlib.com
     Version: 1.0
-    Created: Colorlib
+    Created: Vision Tech Inc
 ---------------------------------------------------------  */
 
 'use strict';
@@ -172,6 +171,40 @@
         type: 'iframe'
     });
 
+
+      /*-----------------------
+		Hero Slider start 
+	------------------------ */
+    document.addEventListener('DOMContentLoaded', function() {
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slide');
+        const nextButton = document.querySelector('.next');
+        const prevButton = document.querySelector('.prev');
+    
+        function showSlide(index) {
+            slides[currentSlide].classList.remove('active');
+            currentSlide = (index + slides.length) % slides.length;
+            slides[currentSlide].classList.add('active');
+        }
+    
+        function nextSlide() {
+            showSlide(currentSlide + 1);
+        }
+    
+        function prevSlide() {
+            showSlide(currentSlide - 1);
+        }
+    
+        nextButton.addEventListener('click', nextSlide);
+        prevButton.addEventListener('click', prevSlide);
+    
+        // Auto slide
+        setInterval(nextSlide, 5000); // Change slide every 5 seconds
+    });
+
+       /*-----------------------
+		Hero Slider end
+	------------------------ */
     /*------------------
         Counter Up
     --------------------*/
