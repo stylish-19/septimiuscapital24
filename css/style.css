@@ -421,7 +421,7 @@ ol {
 .header__logo {
 	padding: 30px 0;
 	position: relative;
-	left: 900px;
+	left: 700px;
 	
 }
 
@@ -618,7 +618,7 @@ ol {
     margin-bottom: 65px;
 	position: relative;
 	top: 300px;
-	left: 150px;
+	left: 60px;
 
   }
 
@@ -628,7 +628,7 @@ ol {
     margin-bottom: 60px;
 	position: relative;
 	top: 300px;
-	left: 150px;
+	left: 60px;
   }
 
 
@@ -642,7 +642,7 @@ ol {
     margin-top: 10px;
 	position: relative;
 	top: 300px;
-	left: 150px;
+	left: 60px;
   }
   
   .primary-btnr:hover, .howit-btnr:hover, .site-btnr:hover {
