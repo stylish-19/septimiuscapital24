@@ -3173,8 +3173,47 @@ left: 700px;
 /*---------------------
   Contact
 -----------------------*/
+.form-container {
+    background-color: #0a083c;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 600px; /* This sets a maximum width for larger screens */
+    text-align: center;
+    margin: 0 auto;
+}
 
-.contact {
+.form-container h1 {
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}
+
+form label {
+    color: #c89410;
+    display: block;
+    margin: 10px 0 5px;
+}
+
+form input, form textarea {
+    width: calc(100% - 20px); /* Full width minus padding */
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #d7b108;
+    border-radius: 4px;
+    background-color: #FFFFFF;
+    box-sizing: border-box;
+}
+
+form button {
+    background-color: #dfa30b;
+    color: #FFFFFF;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+/* .contact {
 	padding-top: 0;
 	padding-bottom: 70px;
 }
@@ -3274,7 +3313,7 @@ left: 700px;
 
 .contact__form__text form textarea::placeholder {
 	color: #707070;
-}
+} */
 
 .contact__address__item {
 	margin-bottom: 30px;
